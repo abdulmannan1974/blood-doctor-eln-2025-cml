@@ -460,6 +460,49 @@
         }
       }
 
+      .abbreviations-box {
+        background: #fff;
+        border-radius: var(--radius);
+        padding: 28px;
+        box-shadow: var(--shadow);
+      }
+
+      .abbreviations-title {
+        font-family: "Fraunces", serif;
+        font-size: 1.4rem;
+        margin: 0 0 20px;
+        color: var(--blood);
+        border-bottom: 2px solid var(--sand);
+        padding-bottom: 12px;
+      }
+
+      .abbreviations-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 12px 24px;
+      }
+
+      .abbr-item {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        color: rgba(16, 16, 24, 0.8);
+        padding: 6px 0;
+        border-bottom: 1px solid rgba(16, 16, 24, 0.06);
+      }
+
+      .abbr-item strong {
+        color: var(--ink);
+        font-weight: 700;
+        min-width: 70px;
+        display: inline-block;
+      }
+
+      @media (max-width: 700px) {
+        .abbreviations-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
       @media (prefers-reduced-motion: reduce) {
         * {
           animation: none !important;
@@ -1113,6 +1156,56 @@
           <div class="disclaimer">
             Educational summary of published guidance. Not medical advice. Follow institutional protocols and local regulatory
             guidance for patient care.
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="abbreviations">
+        <div class="abbreviations-box">
+          <h3 class="abbreviations-title">Abbreviations</h3>
+          <div class="abbreviations-grid">
+            <div class="abbr-item"><strong>ACA</strong> – Additional Chromosomal Abnormalities (clonal evolution or clonal cytogenetic evolution) detected by Cytogenetics</div>
+            <div class="abbr-item"><strong>AE</strong> – Adverse Event</div>
+            <div class="abbr-item"><strong>alloSCT</strong> – Allogeneic Stem Cell Transplantation</div>
+            <div class="abbr-item"><strong>AOE</strong> – Arterial Occlusive Events</div>
+            <div class="abbr-item"><strong>BID</strong> – Twice Daily (bis in die)</div>
+            <div class="abbr-item"><strong>BM</strong> – Bone Marrow</div>
+            <div class="abbr-item"><strong>BP</strong> – Blast Phase</div>
+            <div class="abbr-item"><strong>CBA</strong> – Conventional Chromosome Banding Analysis (Cytogenetics)</div>
+            <div class="abbr-item"><strong>CCyR</strong> – Complete Cytogenetic Response</div>
+            <div class="abbr-item"><strong>CHR</strong> – Complete Hematologic Response</div>
+            <div class="abbr-item"><strong>CML</strong> – Chronic Myeloid Leukemia</div>
+            <div class="abbr-item"><strong>CNS</strong> – Central Nervous System</div>
+            <div class="abbr-item"><strong>CP</strong> – Chronic Phase</div>
+            <div class="abbr-item"><strong>CP1</strong> – First Chronic Phase</div>
+            <div class="abbr-item"><strong>DMR</strong> – Deep Molecular Response</div>
+            <div class="abbr-item"><strong>ECG</strong> – Electrocardiogram</div>
+            <div class="abbr-item"><strong>ELN</strong> – European LeukemiaNet</div>
+            <div class="abbr-item"><strong>ELTS</strong> – EUTOS Long-Term Survival (score)</div>
+            <div class="abbr-item"><strong>EMR</strong> – Early Molecular Response</div>
+            <div class="abbr-item"><strong>EUTOS</strong> – European Treatment and Outcome Study</div>
+            <div class="abbr-item"><strong>FBC</strong> – Full Blood Count</div>
+            <div class="abbr-item"><strong>FISH</strong> – Fluorescence In Situ Hybridization</div>
+            <div class="abbr-item"><strong>GI</strong> – Gastrointestinal</div>
+            <div class="abbr-item"><strong>HbA1c</strong> – Glycated Hemoglobin</div>
+            <div class="abbr-item"><strong>IFN</strong> – Interferon</div>
+            <div class="abbr-item"><strong>IS</strong> – International Scale</div>
+            <div class="abbr-item"><strong>MMR</strong> – Major Molecular Response (BCR::ABL1 ≤0.1% IS)</div>
+            <div class="abbr-item"><strong>MR4</strong> – Molecular Response 4-log reduction (BCR::ABL1 ≤0.01% IS)</div>
+            <div class="abbr-item"><strong>MR4.5</strong> – Molecular Response 4.5-log reduction (BCR::ABL1 ≤0.0032% IS)</div>
+            <div class="abbr-item"><strong>MR5</strong> – Molecular Response 5-log reduction (BCR::ABL1 ≤0.001% IS)</div>
+            <div class="abbr-item"><strong>NGS</strong> – Next-Generation Sequencing</div>
+            <div class="abbr-item"><strong>OS</strong> – Overall Survival</div>
+            <div class="abbr-item"><strong>PAH</strong> – Pulmonary Arterial Hypertension</div>
+            <div class="abbr-item"><strong>PB</strong> – Peripheral Blood</div>
+            <div class="abbr-item"><strong>Ph+</strong> – Philadelphia Chromosome Positive</div>
+            <div class="abbr-item"><strong>RT-ddPCR</strong> – Reverse Transcription Droplet Digital PCR</div>
+            <div class="abbr-item"><strong>RT-qPCR</strong> – Reverse Transcription Quantitative PCR</div>
+            <div class="abbr-item"><strong>TFR</strong> – Treatment-Free Remission</div>
+            <div class="abbr-item"><strong>TKI</strong> – Tyrosine Kinase Inhibitor</div>
+            <div class="abbr-item"><strong>VOE</strong> – Venous Occlusive Events</div>
+            <div class="abbr-item"><strong>WHO</strong> – World Health Organization</div>
+            <div class="abbr-item"><strong>2GTKI</strong> – Second-Generation Tyrosine Kinase Inhibitor</div>
           </div>
         </div>
       </section>
